@@ -24,7 +24,7 @@ body {
           justify-content: center;
 }
 .flex-container:nth-child(even) {
-  background-color: #c5eff7;
+  background-color: #e4f1fe;
 }
 .flex-container .info-content {
   font-size: 1.5em;
@@ -35,6 +35,9 @@ body {
 }
 .flex-container .info-content ul li {
   line-height: 2em;
+}
+.flex-container .info-images img {
+  margin-top: 20px;
 }
 .flex-container-data div {
   width: 45%;
