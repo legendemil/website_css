@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="js,css,html,tools">
+	<meta name="description" content="Front-End developer tools">
+	<meta name="author" content="Emil Pausz">
+	<title>Front-End tools</title>
+
+	<!-- lato font -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<!-- main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header id='site-header'>
+			<h1>Front-End developer</h1>
+			<h2>Tools</h2>
+			<p>Czyli jak ułatwić sobie życie.</p>
+		</header>
+		<!-- podstawowe narzedzia -->
+		<section id='basic-tools' class='flex-container'>
+			<div class='info-tool-container'>
+				<h1>HTML5</h1>
+				<img src="img/basic/html.png" alt='html-logo'>
+				<p>Struktura</p>
+			</div>
+			<div class='info-tool-container'>
+				<h1>CSS3</h1>
+				<img src="img/basic/css.png" alt='css-logo'>
+				<p>Wygląd</p>
+			</div>
+			<div class='info-tool-container'>
+				<h1>JavaScript</h1>
+				<img src="img/basic/js.png" alt='js-logo'>
+				<p>Fajne rzeczy</p>
+			</div>
+			<div style='clear: both;'></div>
+		</section>
+		<!-- preprocesory -->
+		<section id="preprocessors" class='flex-container flex-container-data'>
+		<!-- lewa strona -->
+			<div>
+				<h1>Preprocesory CSS</h1>
+				<p>Pozwalają na łatwiejsze i szybsze pisanie CSS</p>
+				<h3>Możliwości</h3>
+				<ul>
+					<li>Zmienne</li>
+					<li>Zagnieżdżanie styli(nesting)</li>
+					<li>Dziedziczenie styli</li>
+					<li>Tzw. mixins</li>
+					<li>i wiele innych</li>
+				</ul>
+			</div>
+			<!-- prawa strona -->
+			<div>
+				<a href="http://stylus-lang.com/" target="_blank"><img src="img/preprocessors/stylus.png" alt="stylus"></a>
+				<a href="sass-lang.com" target="_blank"><img src="img/preprocessors/sass.png" alt="sass"></a>
+				<a href="http://lesscss.org/" target="_blank"><img src="img/preprocessors/less.png" alt="less"></a>
+			</div>
+		</section>
+		<!-- framewroki js -->
+		<section id='frameworks-js' class='flex-container flex-container-data'>
+			<!-- lewa strona -->
+			<div>
+				<a href="https://angularjs.org/" target="_blank"><img src="img/js_frame/angular.png" alt="angular"></a>
+				<a href="http://backbonejs.org/" target="_blank"><img src="img/js_frame/backbone.png" alt="backbone"></a>
+				<a href="http://emberjs.com/" target="_blank"><img src="img/js_frame/ember.png" alt="ember"></a>
+			</div>
+			<!-- prawa strona -->
+			<div>
+				<h1>Frameworki JS</h1>
+				<p>Pomagają w organizacji kodu.</p>
+				<h3>Zalety</h3>
+				<ul>
+					<li>Szybkość i łatwość tworzenia</li>
+					<li>Użycie wzorców</li>
+					<li>Łatwiejsze testowanie</li>
+				</ul>
+			</div>
+		</section>
+		<!-- biblioteki js -->
+		<section id="libraries" class="flex-container flex-container-data">
+			<!-- lewa strona -->
+			<div>
+				<h1>Biblioteki JS</h1>
+				<p>Narzędzia ułatwiające wykonanie określonych czynności na stronie</p>
+				<h3>Dlaczego warto?</h3>
+				<ul>
+					<li>Reużywalność kodu</li>
+					<li>Nie trzeba rozwiązywać powszechnych problemów na nowo</li>
+					<li>Mniej czasu spędzonego przed komputerem</li>
+				</ul>
+			</div>
+			<!-- prawa strona -->
+			<div>
+				<a href="https://jquery.com/" target="_blank"><img src="img/libraries/jquery.png" alt="jquery"></a>
+				<a href="https://facebook.github.io/react/" target="_blank"><img src="img/libraries/react.png" alt="react"></a>
+				<a href="https://d3js.org/" target="_blank"><img src="img/libraries/d3.png" alt="d3"></a>
+			</div>
+		</section>
+		<section id="build-tools" class="flex-container flex-container-data">
+			<!-- lewa strona -->
+			<div>
+				<a href="http://gruntjs.com/" target="_blank"><img src="img/build_tools/grunt.png" alt="grunt"></a>
+				<a href="https://webpack.github.io/" target="_blank"><img src="img/build_tools/webpack.png" alt="webpack"></a>
+				<a href="http://gulpjs.com/" target="_blank"><img src="img/build_tools/gulp.png" alt="gulp"></a>
+			</div>
+
+			<!-- prawa strona -->
+			<div>
+				<h1>Build Tools</h1>
+				<p>Pomagają w automatyzacji pracy</p>
+				<h3>Czym się zajmują?</h3>
+				<ul>
+					<li>Zmniejszanie rozmiaru CSS</li>
+					<li>Łączenie i zmniejszanie plików JS</li>
+					<li>Zmniejszanie pojemności obrazów</li>
+					<li>Lokalny serwer www</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			By Emil Pausz <br>
+			<small>The coolest guy in the universe</small>
+		</footer>
+	</div>
+</body>
+</html>
