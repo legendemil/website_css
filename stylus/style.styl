@@ -2,6 +2,20 @@
 dark-blue = #22313F
 light-blue = #E4F1FE
 
+#back-text
+	text-align center
+	font-weight 300
+	color #fff
+	position fixed
+	top 20%
+	left 50%
+	transform translateX(-50%)
+	font-size 5em
+	animation-name show-back-name
+	animation-duration 2s
+	animation-fill-mode forwards
+	animation-timing-function  cubic-bezier(.03,1,.26,.89)
+
 body
 	background-color dark-blue
 	font-family 'Lato', sans-serif
@@ -11,6 +25,10 @@ body
 	background-color #fff
 	max-width 1024px
 	margin 0 auto !important
+	animation-name show-container
+	animation-duration 4s
+	animation-fill-mode forwards
+	animation-timing-function easy-in
 .flex-container
 	padding 40px		
 	display flex
@@ -31,6 +49,8 @@ body
 .flex-container-data
 	& div
 		width 45%
+		@media screen and (max-width: 482px)
+			width 100%
 	& div + div
 		margin-left 40px
 	& div img 
@@ -66,8 +86,6 @@ header#site-header
 		max-width 200px
 		
 
-
-
 footer
 	text-align center
 	padding 10px
@@ -76,6 +94,36 @@ footer
 	
 
 
-		
+// animation 
+@keyframes show-container {
+	0% {	
+		transform-origin center bottom
+		transform perspective(400px) rotateX(90deg)
+		opacity 0.1
+	}	
 	
-	
+	80% {
+		transform  rotateX(-5deg)
+	}
+	100% {
+
+	}
+}
+
+
+
+
+@keyframes show-back-name {
+	0% {	
+		transform translateX(-200%)
+		opacity 0.1
+	}		
+	50% {
+		transform  translateX(-50%)
+		opacity 1
+	}
+	100% {
+		transform  translateX(200%)
+		opacity 0.0
+	}
+}
