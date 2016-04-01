@@ -1,12 +1,14 @@
 body {
+  background-color: #22313f;
   font-family: 'Lato', sans-serif;
 }
 .container {
+  background-color: #fff;
   max-width: 1024px;
-  margin-top: 0px;
   margin: 0 auto !important;
 }
 .flex-container {
+  padding: 40px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +21,9 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.flex-container:nth-child(even) {
+  background-color: #c5eff7;
 }
 .flex-container-data div {
   width: 45%;
@@ -33,10 +38,15 @@ body {
 }
 header#site-header {
   text-align: center;
+  margin-bottom: 100px;
+  padding-top: 40px;
 }
 header#site-header > h1 {
-  font-size: 50px;
+  font-size: 80px;
   padding-top: 60px;
+}
+header#site-header > h2 {
+  font-size: 40px;
 }
 header#site-header p {
   padding-top: 20px;

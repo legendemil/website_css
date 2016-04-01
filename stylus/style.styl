@@ -1,18 +1,24 @@
+// colors
+dark-blue = #22313F
+light-blue = #C5EFF7
+
 body
+	background-color dark-blue
 	font-family 'Lato', sans-serif
-	
 
 .container
+	background-color #fff
 	max-width 1024px
-	margin-top 0px
 	margin 0 auto !important
-	
-.flex-container		
+.flex-container
+	padding 40px		
 	display flex
 	flex-direction row
 	flex-wrap wrap
 	justify-content center
-	
+	&:nth-child(even)
+		background-color light-blue
+
 .flex-container-data
 	& div
 		width 45%
@@ -26,9 +32,13 @@ body
 
 header#site-header
 	text-align center
+	margin-bottom 100px
+	padding-top 40px
 	> h1
-		font-size 50px
+		font-size 80px
 		padding-top 60px
+	>  h2
+		font-size 40px
 	p 
 		padding-top 20px
 		font-size 1.2em
