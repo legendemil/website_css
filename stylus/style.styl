@@ -5,6 +5,7 @@ light-blue = #C5EFF7
 body
 	background-color dark-blue
 	font-family 'Lato', sans-serif
+	text-decoration none
 
 .container
 	background-color #fff
@@ -18,7 +19,13 @@ body
 	justify-content center
 	&:nth-child(even)
 		background-color light-blue
-
+	.info-content
+		font-size 1.5em
+		font-weight 300
+		ul
+			list-style-type circle
+			li 
+				line-height 2em
 .flex-container-data
 	& div
 		width 45%
@@ -56,6 +63,8 @@ header#site-header
 	img
 		max-width 200px
 		
+
+
 
 footer
 	text-align center
