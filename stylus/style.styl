@@ -1,7 +1,7 @@
 // colors
 dark-blue = #22313F
 light-blue = #E4F1FE
-
+selection-blue = #81CFE0
 #back-text
 	text-align center
 	font-weight 300
@@ -17,6 +17,10 @@ light-blue = #E4F1FE
 	animation-timing-function  cubic-bezier(.03,1,.26,.89)
 
 body
+	white-space normal
+	font-style normal
+	font-variant normal
+	text-indent 0px
 	background-color dark-blue
 	font-family 'Lato', sans-serif
 	text-decoration none
@@ -38,6 +42,10 @@ body
 	&:nth-child(even)
 		background-color light-blue
 	.info-content
+		h1 
+			letter-spacing 5px
+			word-spacing 7px
+			text-transform uppercase
 		font-size 1.5em
 		font-weight 300
 		ul
@@ -89,8 +97,13 @@ header#site-header
 footer
 	text-align center
 	padding 10px
+	&::first-letter
+	&::first-line
+		color black
 
-
+::selection 
+	background-color selection-blue
+	color #fff
 	
 
 

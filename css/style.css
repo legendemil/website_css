@@ -19,6 +19,10 @@
           animation-timing-function: cubic-bezier(0.03, 1, 0.26, 0.89);
 }
 body {
+  white-space: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-indent: 0px;
   background-color: #22313f;
   font-family: 'Lato', sans-serif;
   text-decoration: none;
@@ -57,6 +61,11 @@ body {
 .flex-container .info-content {
   font-size: 1.5em;
   font-weight: 300;
+}
+.flex-container .info-content h1 {
+  letter-spacing: 5px;
+  word-spacing: 7px;
+  text-transform: uppercase;
 }
 .flex-container .info-content ul {
   list-style-type: circle;
@@ -118,6 +127,18 @@ header#site-header p {
 footer {
   text-align: center;
   padding: 10px;
+}
+footer::first-letter,
+footer::first-line {
+  color: #000;
+}
+::-moz-selection {
+  background-color: #81cfe0;
+  color: #fff;
+}
+::selection {
+  background-color: #81cfe0;
+  color: #fff;
 }
 @-webkit-keyframes show-container {
   0% {
