@@ -17,6 +17,7 @@ selection-blue = #81CFE0
 	animation-timing-function  cubic-bezier(.03,1,.26,.89)
 
 body
+	outline none
 	white-space normal
 	font-style normal
 	font-variant normal
@@ -50,11 +51,17 @@ body
 		font-weight 300
 		ul
 			list-style-type circle
+			list-style-position inside
 			li 
 				line-height 2em
 	.info-images img
 		margin-top 20px
 .flex-container-data
+	& div:first-child
+		border-right 1px solid dark-blue
+		@media screen and (max-width: 482px)
+			border-right none
+			border-bottom 1px solid dark-blue
 	& div
 		width 45%
 		@media screen and (max-width: 482px)
@@ -104,8 +111,23 @@ footer
 ::selection 
 	background-color selection-blue
 	color #fff
-	
 
+
+	
+.bg-space
+	width 100%
+	min-height 200px
+	background-attachment fixed
+	background-image url('../img/bg/1.jpg')
+	background-position center center
+	&:nth-of-type(1)
+		background-image url('../img/bg/1.jpg')
+	&:nth-of-type(2)
+		background-image url('../img/bg/2.jpg')
+	&:nth-of-type(3)
+		background-image url('../img/bg/3.jpg')
+	&:nth-of-type(4)
+		background-image url('../img/bg/4.jpg')
 
 // animation 
 @keyframes show-container {
